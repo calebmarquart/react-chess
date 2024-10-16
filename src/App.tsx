@@ -1,11 +1,7 @@
-import ChessBoard from './components/ChessBoard';
+import Game from './components/Game';
 
 function App() {
-    return (
-        <>
-            <ChessBoard />
-        </>
-    );
+    return <Game />;
 }
 
 export default App;

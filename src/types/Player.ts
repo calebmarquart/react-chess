@@ -5,6 +5,6 @@
 //
 
 export enum Player {
-    white,
-    black,
+    white = 'White',
+    black = 'Black',
 }

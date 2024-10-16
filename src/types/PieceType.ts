@@ -1,10 +1,10 @@
 //
-// Piece.ts
+// PieceType.ts
 //
 // Created by Caleb on 2024-08-05
 //
 
-export enum Piece {
+export enum PieceType {
     king,
     queen,
     bishop,

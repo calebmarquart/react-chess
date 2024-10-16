@@ -5,7 +5,7 @@
 //
 
 // Import libraries, hooks, and functions
-import { Piece } from '../types/Piece';
+import { PieceType } from '../types/PieceType';
 import { Player } from '../types/Player';
 
 // Import components
@@ -33,35 +33,35 @@ interface ChessPieceProps {
 
 const ChessPiece = ({ playerPiece }: ChessPieceProps) => {
     const getPieceImage = () => {
-        const { player, piece } = playerPiece;
+        const { player, type } = playerPiece;
         if (player === Player.white) {
-            switch (piece) {
-                case Piece.king:
+            switch (type) {
+                case PieceType.king:
                     return whiteKing;
-                case Piece.queen:
+                case PieceType.queen:
                     return whiteQueen;
-                case Piece.bishop:
+                case PieceType.bishop:
                     return whiteBishop;
-                case Piece.knight:
+                case PieceType.knight:
                     return whiteKnight;
-                case Piece.rook:
+                case PieceType.rook:
                     return whiteRook;
-                case Piece.pon:
+                case PieceType.pon:
                     return whitePon;
             }
         } else {
-            switch (piece) {
-                case Piece.king:
+            switch (type) {
+                case PieceType.king:
                     return blackKing;
-                case Piece.queen:
+                case PieceType.queen:
                     return blackQueen;
-                case Piece.bishop:
+                case PieceType.bishop:
                     return blackBishop;
-                case Piece.knight:
+                case PieceType.knight:
                     return blackKnight;
-                case Piece.rook:
+                case PieceType.rook:
                     return blackRook;
-                case Piece.pon:
+                case PieceType.pon:
                     return blackPon;
             }
         }

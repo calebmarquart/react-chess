@@ -4,11 +4,10 @@
 // Created by Caleb on 2024-08-05
 //
 
-import useBoard from '../hooks/useBoard';
+// Import libraries, hooks, and functions
+import { Board } from '../types/Board';
 import { Position } from '../types/Position';
 import ChessPiece from './ChessPiece';
-
-// Import libraries, hooks, and functions
 
 // Import components
 
@@ -16,8 +15,17 @@ import ChessPiece from './ChessPiece';
 
 // Import styles
 
-const ChessBoard = () => {
-    const { board, selectSquare, selectedSquare } = useBoard();
+interface ChessBoardProps {
+    board: Board;
+    selectedSquare: Position | null;
+    selectSquare: (position: Position) => void;
+}
+
+const ChessBoard = ({
+    board,
+    selectSquare,
+    selectedSquare,
+}: ChessBoardProps) => {
     const rows = Array.from({ length: 8 }, (_, i) => i);
     const cols = Array.from({ length: 8 }, (_, i) => i);
 

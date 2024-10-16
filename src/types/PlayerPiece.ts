@@ -4,10 +4,10 @@
 // Created by Caleb on 2024-08-05
 //
 
-import { Piece } from './Piece';
+import { PieceType } from './PieceType';
 import { Player } from './Player';
 
 export interface PlayerPiece {
-    piece: Piece;
+    type: PieceType;
     player: Player;
 }

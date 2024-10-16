@@ -4,9 +4,9 @@
 // Created by Caleb on 2024-08-05
 //
 
+import { Position } from './Position';
+
 export interface Move {
-    fromCol: number;
-    toCol: number;
-    fromRow: number;
-    toRow: number;
+    from: Position;
+    to: Position;
 }
