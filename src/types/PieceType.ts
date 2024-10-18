@@ -5,10 +5,10 @@
 //
 
 export enum PieceType {
-    king,
-    queen,
-    bishop,
-    knight,
-    rook,
-    pon,
+    king = 'King',
+    queen = 'Queen',
+    bishop = 'Bishop',
+    knight = 'Knight',
+    rook = 'Rook',
+    pon = 'Pon',
 }
